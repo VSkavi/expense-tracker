@@ -6,7 +6,7 @@ A modern personal finance web app built with **React 19**, **Vite**, and **Tailw
 
 ## 🚀 Live Demo
 
-> https://expense-tracki-app.netlify.app/login
+> https://expense-tracki-app.netlify.app/
 
 ---
 
