@@ -204,7 +204,7 @@ ${transaction.timestamp}`
 
                 <div className="flex flex-wrap gap-4 items-center">
 
-                    <div className="relative">
+                    <div className="relative w-full sm:w-auto">
 
                         <Search
                             size={18}
@@ -220,7 +220,7 @@ ${transaction.timestamp}`
                                     e.target.value
                                 )
                             }
-                            className="pl-10 pr-4 py-2 border rounded-xl outline-none"
+                            className="w-full sm:w-auto pl-10 pr-4 py-2 border rounded-xl outline-none"
                         />
 
                     </div>
@@ -232,7 +232,7 @@ ${transaction.timestamp}`
                                 e.target.value
                             )
                         }
-                        className="px-4 py-2 border rounded-xl outline-none"
+                        className="w-full sm:w-auto px-4 py-2 border rounded-xl outline-none"
                     >
 
                         <option value="">
@@ -262,7 +262,7 @@ ${transaction.timestamp}`
                                 e.target.value
                             )
                         }
-                        className="px-4 py-2 border rounded-xl"
+                        className="w-full sm:w-auto px-4 py-2 border rounded-xl"
                     />
 
                     <input
@@ -273,12 +273,12 @@ ${transaction.timestamp}`
                                 e.target.value
                             )
                         }
-                        className="px-4 py-2 border rounded-xl"
+                        className="w-full sm:w-auto px-4 py-2 border rounded-xl"
                     />
 
                     <button
                         onClick={exportPDF}
-                        className="flex items-center gap-2 bg-[#003B7A] text-white px-4 py-2 rounded-xl"
+                        className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#003B7A] text-white px-4 py-2 rounded-xl"
                     >
                         <Download size={18} />
                         PDF
@@ -286,7 +286,7 @@ ${transaction.timestamp}`
 
                     <button
                         onClick={exportCSV}
-                        className="flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-xl"
+                        className="w-full sm:w-auto flex items-center justify-center gap-2 bg-green-600 text-white px-4 py-2 rounded-xl"
                     >
                         <Download size={18} />
                         CSV

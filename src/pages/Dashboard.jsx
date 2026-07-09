@@ -241,13 +241,13 @@ function Dashboard() {
                     Spending Trend
                 </h3>
 
-                <div className="flex items-end justify-between h-64">
+                <div className="scroll-x-mobile flex items-end justify-start sm:justify-between gap-4 sm:gap-0 h-64 pb-2">
 
                     {monthlyExpenseData.map((item) => (
 
                         <div
                             key={item.month}
-                            className="flex flex-col items-center"
+                            className="flex flex-col items-center shrink-0"
                         >
 
                             {/* EXACT EXPENSE AMOUNT */}
