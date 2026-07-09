@@ -35,17 +35,6 @@ function Dashboard() {
             );
         });
 
-    const monthlyIncome =
-        monthlyTransactions
-            .filter(
-                (t) => t.type === "income"
-            )
-            .reduce(
-                (sum, t) =>
-                    sum + t.amount,
-                0
-            );
-
     const monthlyExpense =
         monthlyTransactions
             .filter(
@@ -241,13 +230,13 @@ function Dashboard() {
                     Spending Trend
                 </h3>
 
-                <div className="scroll-x-mobile flex items-end justify-start sm:justify-between gap-4 sm:gap-0 h-64 pb-2">
+                <div className="flex items-end justify-between h-64">
 
                     {monthlyExpenseData.map((item) => (
 
                         <div
                             key={item.month}
-                            className="flex flex-col items-center shrink-0"
+                            className="flex flex-col items-center"
                         >
 
                             {/* EXACT EXPENSE AMOUNT */}

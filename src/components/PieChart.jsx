@@ -3,14 +3,16 @@ import {
     Pie,
     Cell,
     Tooltip,
-    ResponsiveContainer,
-    BarChart,
-    Bar,
-    XAxis,
-    YAxis,
-    CartesianGrid,
-    Legend,
 } from "recharts";
+
+const COLORS = [
+    "#003B7A",
+    "#4F7FD8",
+    "#F0C75E",
+    "#9A86FD",
+    "#FF8A65",
+];
+
 const data = [
     {
         name: "Food",
@@ -30,7 +32,7 @@ function ChartComponent() {
     return (
         <PieChart width={400} height={300}>
             <Pie
-                data={categoryData}
+                data={data}
                 cx="50%"
                 cy="50%"
                 innerRadius={80}
@@ -39,7 +41,10 @@ function ChartComponent() {
                 dataKey="value"
             >
                 {data.map((entry, index) => (
-                    <Cell key={index} />
+                    <Cell
+                        key={index}
+                        fill={COLORS[index % COLORS.length]}
+                    />
                 ))}
             </Pie>
 
